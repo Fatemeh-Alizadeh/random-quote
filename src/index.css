@@ -21,9 +21,7 @@
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
-  --clr-dark: #29293d;
-  --clr-light: #f2f2f2;
-  --clr-accent: #ffbb99;
+  --clr-dark: black;
 }
 
 h1,
@@ -40,4 +38,5 @@ h6 {
 p {
   font-family: var(--ff);
   color: var(--clr-dark);
+  text-transform: capitalize;
 }

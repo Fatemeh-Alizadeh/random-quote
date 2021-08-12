@@ -4,11 +4,11 @@ import {ImQuotesRight, ImCircleRight, ImCircleLeft ,ImTwitter } from "react-icon
 
 function App() {
     const [index, setIndex] = useState(0);
-    const { id, text, author } = quote[index];
+    const {text, author, color } = quote[index];
 
     return (
         
-             <section className='wrapper'>
+             <section className='wrapper' style={{background:color}}>
             <span className="qoute-icon">
                 <ImQuotesRight />
             </span>
@@ -17,7 +17,7 @@ function App() {
                     <p>{text}</p>
                 </div>
                 <div id="author">
-                    <h4>{author}</h4>
+                    <h6>-{author}</h6>
                 </div>
                 <a href="twitter.com/intent/tweet" id="tweet-quote"><ImTwitter /></a>
                 <button id='new-qoute'><ImCircleLeft /></button>
