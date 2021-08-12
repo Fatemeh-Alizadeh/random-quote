@@ -1,13 +1,43 @@
-body {
+/* General Style */
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+:root {
+  --ff: "Special Elite", cursive;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --clr-dark: #29293d;
+  --clr-light: #f2f2f2;
+  --clr-accent: #ffbb99;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff);
+  text-transform: capitalize;
+  color: var(--clr-dark);
+}
+
+p {
+  font-family: var(--ff);
+  color: var(--clr-dark);
 }

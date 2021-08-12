@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import quote from './data'
+import {ImQuotesRight, ImCircleRight, ImCircleLeft ,ImTwitter } from "react-icons/im";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [index, setIndex] = useState(0);
+    const { id, text, author } = quote[index];
+
+    return (
+        
+             <section className='wrapper'>
+            <span className="qoute-icon">
+                <ImQuotesRight />
+            </span>
+            <div id="quote-box">
+                <div id="text">
+                    <p>{text}</p>
+                </div>
+                <div id="author">
+                    <h4>{author}</h4>
+                </div>
+                <a href="twitter.com/intent/tweet" id="tweet-quote"><ImTwitter /></a>
+                <button id='new-qoute'><ImCircleLeft /></button>
+                <button id='new-qoute'><ImCircleRight /></button>
+            </div>
+
+    </section>
+      
+)
 }
+
+
 
 export default App;
