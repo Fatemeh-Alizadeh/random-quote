@@ -9,10 +9,10 @@ function App() {
     return (
         
              <section className='wrapper' style={{background:color}}>
-            <span className="qoute-icon">
+            <span className="qoute-icon"  >
                 <ImQuotesRight />
             </span>
-            <div id="quote-box">
+            <div id="quote-box" >
                 <div id="text">
                     <p>{text}</p>
                 </div>
@@ -20,8 +20,8 @@ function App() {
                     <h6>-{author}</h6>
                 </div>
                 <a href="twitter.com/intent/tweet" id="tweet-quote"><ImTwitter /></a>
-                <button id='new-qoute'><ImCircleLeft /></button>
-                <button id='new-qoute'><ImCircleRight /></button>
+                <button id='new-quote'><ImCircleLeft /></button>
+                <button id='pre-quote'><ImCircleRight /></button>
             </div>
 
     </section>
